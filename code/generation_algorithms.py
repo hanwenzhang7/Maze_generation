@@ -223,8 +223,6 @@ class Kruskals:
         def merge(self, left_cell, right_cell, direction):
             #  knockdown maze wall
             left_cell.knock_down_wall(right_cell, direction)
-#             self.maze.maze_map[left_cell.x][left_cell.y] = left_cell
-#             self.maze.maze_map[right_cell.x][right_cell.y] = right_cell
             
             winner = self.set_for_cell[left_cell]
             loser = self.set_for_cell[right_cell]
